@@ -14,4 +14,5 @@ var.linear.x = 0
 while not rospy.is_shutdown():
   pub.publish(var)
   var.linear.x += 0.1
+  var.angular.z += 0.1
   rate.sleep()
